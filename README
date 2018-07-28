@@ -1,0 +1,14 @@
+Script calculant une serie d'images alors que l'image ouverte passer à une vitesse relativiste parallèlement à l'observateur.
+
+deux elements necessaires:
+
+relativisticimage.m - script matlab
+ours-sur-un-velo.png - image a tranformer
+
+le script genere une serie d'images
+
+pour generer une video, installer par exemple ffmpeg, et entrer: 
+ffmpeg -r 10 -start_number 1 -i relim%04d.bmp -c:v libx264 -r 30 -pix_fmt yuv420p out.mp4
+
+
+le script matlab peut aussi etre execute sur scilab avec la librairie graphique sip (pour lire et ecrire des images)
